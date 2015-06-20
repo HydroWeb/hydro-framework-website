@@ -1,0 +1,14 @@
+// Logo
+// ----
+
+h1.logo {
+	margin: 0;
+	user-select: none;
+	cursor: default;
+
+	> img {
+		vertical-align: bottom;
+		width: em(47px, 50px) !important;
+		height: em(60px, 50px) !important;
+	}
+}

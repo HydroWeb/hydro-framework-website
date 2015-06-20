@@ -1,0 +1,19 @@
+// Settings
+// --------
+
+
+// Styles
+// ------
+
+@include hf-module('section') {
+	padding: hf-gutter('pc') * 2 hf-gutter('pc');
+
+	@include hf-parameter('color-dark') {
+		background-color: hf-color('dark');
+		color: hf-color('light');
+	}
+
+	@include hf-parameter('color-light') {
+		background-color: hf-color('lighter');
+	}
+}

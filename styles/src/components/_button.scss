@@ -1,0 +1,42 @@
+// Styles
+// ------
+
+.button {
+	@include hf-button(
+		$font-size: em(16px),
+		$padding: hf-gutter('md'),
+		$border-width: 2px
+	);
+
+	font-family: hf-font('primary');
+	font-weight: hf-font-weight('primary', 'semibold');
+	line-height: 1;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: hf-color('primary');
+	border-color: transparent;
+	color: hf-color('dark');
+	transition:
+		background-color $transition,
+		border-color $transition,
+		color $transition;
+
+	&:hover,
+	&:focus {
+		background-color: hf-color('secondary');
+		color: hf-color('dark');
+	}
+
+	@include hf-parameter('ghost') {
+		background-color: transparent;
+		border-color: hf-color('light', 0.5);
+		color: hf-color('light');
+
+		&:hover,
+		&:focus {
+			border-color: hf-color('secondary', 0.5);
+			color: hf-color('secondary');
+		}
+	}
+}

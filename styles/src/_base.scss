@@ -1,0 +1,27 @@
+// Styles
+// ------
+
+html {
+	background-color: hf-color('lighter');
+	color: hf-color('dark');
+}
+
+#content {
+	background-color: hf-color('white');
+}
+
+[data-v-cloak] {
+	display: none;
+}
+
+
+
+@each $font-name, $weights in $hf-weights {
+
+	@each $weight-name, $weight-value in $weights {
+
+		@include hf-utility($font-name + '-' + $weight-name) {
+			font-weight: $weight-value;
+		}
+	}
+}
