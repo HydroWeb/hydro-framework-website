@@ -20,12 +20,18 @@
 	transition:
 		background-color $transition,
 		border-color $transition,
-		color $transition;
+		color $transition,
+		transform $transition;
 
 	&:hover,
 	&:focus {
 		background-color: hf-color('secondary');
 		color: hf-color('dark');
+		transform: scale(1.04);
+	}
+
+	&:active {
+		transform: none;
 	}
 
 	@include hf-parameter('ghost') {

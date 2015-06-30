@@ -1,0 +1,16 @@
+#footer {
+	padding: hf-gutter('lg');
+	font-size: em(18px);
+	font-weight: hf-font-weight('primary', 'regular');
+	background-color: hf-color('darker');
+	color: hf-color('mid');
+
+	a {
+		color: hf-color('mid');
+
+		&:hover,
+		&:focus {
+			color: hf-color('secondary')
+		}
+	}
+}

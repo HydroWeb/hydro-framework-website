@@ -6,11 +6,16 @@
 // ------
 
 @include hf-module('section') {
-	padding: hf-gutter('pc') * 2 hf-gutter('pc');
+	padding: hf-gutter('pc') * 1.6 hf-gutter('pc');
 
 	@include hf-parameter('color-dark') {
 		background-color: hf-color('dark');
 		color: hf-color('light');
+	}
+
+	@include hf-parameter('color-darker') {
+		background-color: hf-color('darker');
+		color: hf-color('mid');
 	}
 
 	@include hf-parameter('color-light') {

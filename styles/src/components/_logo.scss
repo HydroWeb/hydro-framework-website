@@ -1,10 +1,21 @@
 // Logo
 // ----
 
-h1.logo {
+.logo {
 	margin: 0;
 	user-select: none;
 	cursor: default;
+	font-family: hf-font('primary');
+	font-weight: hf-font-weight('primary', 'semibold');
+
+	@include hf-responsive((
+		'mobl': (font-size: em(42px)),
+		'desk': (font-size: em(50px))
+	));
+
+	line-height: 1;
+	letter-spacing: -0.06em;
+	text-transform: uppercase;
 
 	> img {
 		vertical-align: bottom;

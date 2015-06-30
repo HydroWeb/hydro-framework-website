@@ -1,0 +1,15 @@
+.menu {
+
+	a {
+		@extend .h3;
+
+		display: block;
+		padding: hf-gutter('sm') hf-gutter('md');
+		color: hf-color('light', 0.5);
+
+		&:hover,
+		&:focus {
+			color: hf-color('secondary');
+		}
+	}
+}

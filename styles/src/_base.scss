@@ -1,8 +1,15 @@
 // Styles
 // ------
 
+@include hf-until(480px) {
+
+	body {
+		font-size: 0.8em;
+	}
+}
+
 html {
-	background-color: hf-color('lighter');
+	background-color: hf-color('darker');
 	color: hf-color('dark');
 }
 

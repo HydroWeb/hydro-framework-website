@@ -4,10 +4,19 @@
 body, .p1 {
 	font-family: hf-font('primary');
 	font-weight: hf-font-weight('primary', 'light');
-	font-size: 1em;
 	line-height: (30px / hf-convert($hf-font-size, px));
 	letter-spacing: -0.02em;
 	text-transform: none;
+}
+
+.p1 {
+	font-size: 1em;
+}
+
+p,
+ul,
+ol {
+	margin: 1em 0;
 }
 
 
@@ -16,17 +25,21 @@ body, .p1 {
 
 h1, .h1 {
 	font-family: hf-font('primary');
-	font-weight: hf-font-weight('primary', 'semibold');
+	font-weight: hf-font-weight('primary', 'regular');
 
 	@include hf-responsive((
-		'mobl': (font-size: em(34px)),
-		'tabl': (font-size: em(42px)),
-		'desk': (font-size: em(50px))
+		'mobl': (font-size: em(32px)),
+		'tabl': (font-size: em(36px)),
+		'desk': (font-size: em(42px))
 	));
 
 	line-height: 1;
 	letter-spacing: -0.06em;
-	text-transform: uppercase;
+	text-transform: none;
+}
+
+h1 {
+	margin: 1em 0;
 }
 
 h2, .h2 {
@@ -43,6 +56,10 @@ h2, .h2 {
 	text-transform: none;
 }
 
+h2 {
+	margin: 1em 0;
+}
+
 h3, .h3 {
 	font-family: hf-font('primary');
 	font-weight: hf-font-weight('primary', 'semibold');
@@ -50,6 +67,10 @@ h3, .h3 {
 	line-height: 1;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
+}
+
+h3 {
+	margin: 1.2em 0;
 }
 
 
@@ -65,4 +86,13 @@ a {
 	&:focus {
 		color: hf-color('secondary');
 	}
+}
+
+
+// Other
+// -----
+
+small, .small {
+	font-size: em(14px);
+	font-weight: hf-font-weight('primary', 'regular');
 }
